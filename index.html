@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择礼品卡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>选择礼品卡</h1>
+        <div class="card-gallery">
+            <img src="card1.jpg" alt="卡面1" class="card-image" onclick="selectCard('card1.jpg')">
+            <img src="card2.jpg" alt="卡面2" class="card-image" onclick="selectCard('card2.jpg')">
+        </div>
+        <h2>选择金额</h2>
+        <div class="amount-options">
+            <button onclick="selectAmount(50)">¥50</button>
+            <button onclick="selectAmount(100)">¥100</button>
+            <button onclick="selectAmount(200)">¥200</button>
+        </div>
+        <button class="next-button" onclick="goToPurchase()">下一步</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
